@@ -13,13 +13,17 @@
 	<!-- 정적자원 맵핑 - resources폴더 안에 파일은 컨트로러를 실행하지 않고 곧바로 실행 -->
 	<resources mapping="/resources/**" location="/resources/" />
 	<!--  이 패키지를 읽어서 @Controller @Service 레파지토리 컴포넌트 을 bean으로 생성해주는 아주 중요한 곳	-->
-	<context:component-scan base-package="com.simple.basic" />
+	<context:component-scan base-package="com.simple.*" />
 
 	<!-- 뷰 리졸버 - 뷰 합성기 -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
+	<!-- 서비스 연결, bean으로 생성	-->
+<!--	<beans:bean id="service" class="com.simple.service.ScoreServiceImpl">-->
+<!--	</beans:bean>-->
+
 
 	
 	
