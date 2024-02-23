@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.simple.basic">
+	<logger name="com.simple.controller">
 		<level value="info" />
 	</logger>
 	

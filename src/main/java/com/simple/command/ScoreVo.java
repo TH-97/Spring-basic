@@ -1,16 +1,42 @@
 package com.simple.command;
 
 public class ScoreVo {
+    private  int sno;
 
     private String name;
     private String kor;
     private String math;
     private String eng;
-    public ScoreVo(String name, String kor, String math, String eng) {
+
+    public ScoreVo(){
+    }
+
+    public ScoreVo(int sno, String name, String kor, String math, String eng) {
+        super();
+        this.sno = sno;
         this.name = name;
         this.kor = kor;
         this.math = math;
         this.eng = eng;
+    }
+
+    @Override
+    public String toString() {
+        return "ScoreVo{" +
+                "sno=" + sno +
+                ", name='" + name + '\'' +
+                ", kor='" + kor + '\'' +
+                ", math='" + math + '\'' +
+                ", eng='" + eng + '\'' +
+                '}';
+    }
+
+    public int getSno() {
+        return sno;
+    }
+
+    public void setSno(int sno) {
+        this.sno = sno;
     }
 
     public String getName() {

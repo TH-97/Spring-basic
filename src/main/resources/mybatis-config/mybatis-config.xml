@@ -5,9 +5,7 @@
   
 <!-- doctype을 configuration으로 선언하면 마이바티스의 설정파일로 사용됩니다. -->  
 <configuration>
-	<typeAliases>
-		<typeAlias type="com.simple.command.ScoreVO" alias="ScoreVO"/>
-		<typeAlias type="com.simple.command.BoardVO" alias="BoardVO"/>
-	</typeAliases>
-
+    <typeAliases>
+        <typeAlias type="com.simple.command.ScoreVo" alias="ScoreVo"/>
+    </typeAliases>
 </configuration> 
